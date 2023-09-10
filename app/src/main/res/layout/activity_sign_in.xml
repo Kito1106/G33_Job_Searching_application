@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6E6"
+    tools:context=".SignIn">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="141dp"
+        android:layout_height="129dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poly6" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="408dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07">
+
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_black"
+            android:gravity="center"
+            android:lineSpacingExtra="-12sp"
+            android:text="Sign Up"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="324dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/round_edittext"
+            android:ems="10"
+            android:padding="5dip"
+            android:hint="Enter email"
+            android:textColor="#BF6E6D6B" />
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="324dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/round_edittext"
+            android:ems="10"
+            android:padding="5dip"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:textColor="#BF6E6D6B" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="309dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="100dp"
+        android:background="#998C51D0"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Do not have an account?"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="83dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="36dp"
+        android:text="Register"
+        android:textColor="#1772B5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="72dp"
+        android:layout_height="114dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/poly7" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="79dp"
+        android:layout_height="157dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719"
+        app:srcCompat="@drawable/polygon2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

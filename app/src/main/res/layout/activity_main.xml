@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:drawableLeft="@drawable/filter"
+        android:drawablePadding="0dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/Filter"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Business Category -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/business_btn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/calculator"
+                android:contentDescription="Business" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Hotel Category -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/hotel_btn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/hotel"
+                android:contentDescription="Hotel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Construction Category -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/construction_btn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_baseline_construction_24"
+                android:contentDescription="Construction" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Construction"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- IT Category -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/it_btn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/laptop"
+                android:contentDescription="IT" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IT"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Engineering Category -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/engineering_btn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/tools"
+                android:contentDescription="Engineering" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Engineering"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Healthcare Category -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/healthcare_btn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/heartbeat"
+                android:contentDescription="Healthcare" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Healthcare"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </GridLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#C6FFF1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/home"
+            android:drawablePadding="1dp"
+            android:text="Home"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FEE0BF"
+            android:drawableTop="@drawable/searchbtn"
+            android:drawablePadding="5dp"
+            android:text="Search"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/saved_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/saved"
+            android:drawablePadding="5dp"
+            android:text="Saved"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/chat_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/chat"
+            android:drawablePadding="5dp"
+            android:text="Chat"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/profile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/profile"
+            android:drawablePadding="5dp"
+            android:text="Profile"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

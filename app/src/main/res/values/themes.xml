@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SavedJob" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="search_your">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="welcome_onb">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="sign_up_wit">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textColor">#BF6E6D6B</item>
+
+    </style>
+
+</resources>

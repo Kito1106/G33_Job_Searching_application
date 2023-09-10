@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "236528165067",
+    "project_id": "jobsearchapp-aa93e",
+    "storage_bucket": "jobsearchapp-aa93e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236528165067:android:a597929aa197da3684fb4e",
+        "android_client_info": {
+          "package_name": "my.edu.utar.savedjob"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-2IhI3SgqeawLGlaLaTlCKRVFCmGjqUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
